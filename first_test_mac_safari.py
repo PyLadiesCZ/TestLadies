@@ -1,12 +1,10 @@
 from selenium import webdriver
-# from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import *
+from selenium.common import exceptions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# binary = FirefoxBinary(r'C:\Program Files (x86)\Mozilla Firefox\firefox.exe')
-# browser = webdriver.Firefox(firefox_binary=binary)
+
 browser = webdriver.Safari()
 browser.get('http://seleniumhq.org/')
 
@@ -20,7 +18,7 @@ try:
 
     print("Hooray, we are on Downloads page")
 
-except TimeoutException:
+except exceptions.TimeoutException:
     print("Sorry, it didn't work")
 
 finally:
