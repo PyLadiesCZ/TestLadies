@@ -1,6 +1,8 @@
 # TestLadies
 Web testing course for beginners.
 
+Work in progress.
+
 ***
 
 ##Instalace
@@ -14,72 +16,67 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - kromě primárního prohlížeče:
 
 	>  - pro Windows - Internet Explorer 
-	> - pro macOS - Safari
-	> - pro Linux **???**
+	>  - pro macOS - Safari
+	>  - pro Linux - již běžně Firefox či Chrome
 
-	si doinstaluj ještě Firefox a Chrome (automatické testy budeme psát na všechny, abychom si byli jistí, že naše webová aplikace funguje ve všech prohlížečích stejně)
+si doinstaluj ještě Firefox a Chrome (automatické testy budeme psát na všechny, abychom si byli jistí, že naše webová aplikace funguje ve všech prohlížečích stejně)
 
 ***
 
-## Instalace na Windows
+## Instalace Selenia
 
-**Selenium**
-Pro automatické testování budeme používat nástroj Selenium.  Je to skvělý nástroj pro automatické testování webových aplikací. Na tomto [odkazu](https://pypi.python.org/pypi/selenium) najdeš příkazy, kterými jej nainstaluješ v příkazové řádce.
+Pro automatické testování budeme používat nástroj Selenium.  Je to skvělý nástroj pro automatické testování webových aplikací. Má podporu pro Firefox, Chrome, Internet Explorer i Safari. Můžeš si tak vybrat podle platformy i prohlížeče, který používáš a také využít všech možností pro komplexní automatizaci a testování. Na tomto [odkazu](https://pypi.python.org/pypi/selenium) najdeš příkazy, kterými jej nainstaluješ v příkazové řádce. Postup se pro Windows, macOS a Linux nijak neliší.
 
-![Použij jednotlivé příkazy.]()
+![Použij jednotlivé příkazy.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_selenium_install.png)
 
-**Ovladače**
-Teď si nainstalujeme ovladače (drivery) pro jednotlive prohlížeče. Nezapomeň je nainstalovat jak pro Internet Explorer, Firefox i Chrome. Instalace ovladačů najdeš [zde].(http://docs.seleniumhq.org/download/)
+## Instalace ovladačů
+Teď si nainstalujeme ovladače (drivery) pro jednotlivé prohlížeče. 
+Nezapomeň je nainstalovat pro všechny prohlížeče, na kterých budeš testovat. Pro *Windows* tedy Internet Explorer, Firefox, Chrome. Na *macOS* pro Safari, Firefox a Chrome. Na *Linux* Firefox a Chrome.
+Ovladače:
+ pro Firefox - Mozzila GeckoDriver
+ pro Safari - SafariDriver
+ pro IE - Microsoft Edge Driver
+ pro Chrome -  Google Chrome Driver
 
-![Ovladače najdeš na stránce až po scrollování kousek níž.]()
+Instalace ovladačů najdeš [zde].(http://docs.seleniumhq.org/download/)
+Stáhni si je a nainstaluj poklepáním.
+
+![Ovladače najdeš na stránce až po scrollování kousek níž.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_drivers_install.png)
 
  
 XXX Doplnit k cemu drivery slouzi.
 
-XXX poladit cestu k browseru
+## Nastavení cesty pro každý prohlížeč zvlášť
+
+XXX poladit cesty k browseru pro kazdy prohlizec na kazdem systemu zvlast TODO Veronika a Magda
 http://stackoverflow.com/questions/40269229/python-selenium-3-0-firefox-47-0-1-installed-in-default-location-is-not-identi
 
-***
+### Windows
 
-## Instalace na macOS
+*Internet Explorer*
+*Firefox*
+*Chrome*
 
-XXX doplnuje Veronicka
+### macOS
 
-**Selenium**
-Pro automatické testování budeme používat nástroj Selenium.  Je to skělý nástroj pro automatické testování webových aplikací. Na tomto [odkazu](https://pypi.python.org/pypi/selenium) najdeš příkazy, kterými jej nainstaluješ v příkazové řádce.
+*Safari*
 
-![Použij jednotlivé příkazy.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/mac_os_selenium_install.png)
+Nastavení pro Safari je naštěstí velmi jednoduché. Řeší to přidání dvou řádků do scriptu s testem. 
 
-**Ovladače**
-Teď si nainstalujeme ovladače (drivery) pro jednotlive prohlížeče. Nezapomeň je nainstalovat jak pro Safari, Firefox i Chrome. Instalace ovladačů najdeš [zde].(http://docs.seleniumhq.org/download/)
+`browser = webdriver.Safari()`
 
-![Ovladače najdeš na stránce až po scrollování kousek níž.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/mac_os_drivers_install.png)
- 
-XXX Doplnit k cemu drivery slouzi.
+`browser.get('http://seleniumhq.org/')`
 
-XXX poladit cestu k browseru
-http://stackoverflow.com/questions/40269229/python-selenium-3-0-firefox-47-0-1-installed-in-default-location-is-not-identi
+![Náhled nastavení pro Safari.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/macos_safari_path.png)
 
-***
+*Firefox*
 
-## Instalace na Linux
+*Chrome*
 
-XXX doplni Magda
+### Linux
 
-**Selenium**
-Pro automatické testování budeme používat nástroj Selenium.  Je to skělý nástroj pro automatické testování webových aplikací. Na tomto [odkazu](https://pypi.python.org/pypi/selenium) najdeš příkazy, kterými jej nainstaluješ v příkazové řádce.
-
-![Použij jednotlivé příkazy.]()
-
-**Ovladače**
-Teď si nainstalujeme ovladače (drivery) pro jednotlive prohlížeče. Nezapomeň je nainstalovat jak pro *XXX* , Firefox i Chrome. Instalace ovladačů najdeš [zde].(http://docs.seleniumhq.org/download/)
-
-![Ovladače najdeš na stránce až po scrollování kousek níž.]()
- 
-XXX Doplnit k cemu drivery slouzi.
-
-XXX poladit cestu k browseru
-http://stackoverflow.com/questions/40269229/python-selenium-3-0-firefox-47-0-1-installed-in-default-location-is-not-identi
+*Firefox*
+*Chrome*
 
 ***
 
