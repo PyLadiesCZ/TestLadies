@@ -43,7 +43,7 @@ Nezapomeň je nainstalovat pro všechny prohlížeče, na kterých budeš testov
 
  pro Chrome -  Google Chrome Driver
 
-Instalace ovladačů najdeš na stránce po scrollování kousek níž [zde].(http://docs.seleniumhq.org/download/)
+Instalace ovladačů najdeš na stránce po scrollování kousek níž [zde](http://docs.seleniumhq.org/download/)
 
 Stáhni si je a nainstaluj poklepáním.
 
