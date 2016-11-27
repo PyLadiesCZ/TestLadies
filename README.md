@@ -32,7 +32,8 @@ Pro automatické testování budeme používat nástroj Selenium. Je to skvělý
 ## Instalace ovladačů
 Teď si nainstalujeme ovladače (drivery) pro jednotlivé prohlížeče. 
 Nezapomeň je nainstalovat pro všechny prohlížeče, na kterých budeš testovat. Pro **Windows** tedy Internet Explorer, Firefox, Chrome. Na **macOS** pro Safari, Firefox a Chrome. Na **Linux** Firefox a Chrome.
-Ovladače:
+
+**Ovladače:**
 
  pro Firefox - Mozzila GeckoDriver
 
@@ -42,7 +43,7 @@ Ovladače:
 
  pro Chrome -  Google Chrome Driver
 
-Instalace ovladačů najdeš [zde].(http://docs.seleniumhq.org/download/)
+Instalace ovladačů najdeš na stránce po scrollování kousek níž [zde].(http://docs.seleniumhq.org/download/)
 
 Stáhni si je a nainstaluj poklepáním.
 
@@ -58,33 +59,32 @@ http://stackoverflow.com/questions/40269229/python-selenium-3-0-firefox-47-0-1-i
 
 ### Windows
 
-*Internet Explorer*
+**Internet Explorer**
 
-*Firefox*
+**Firefox**
 
-*Chrome*
+**Chrome**
 
 ### macOS
 
-*Safari*
+**Safari**
 
 Nastavení pro Safari je naštěstí velmi jednoduché. Řeší to přidání dvou řádků do scriptu s testem. 
 
 `browser = webdriver.Safari()`
-
 `browser.get('http://seleniumhq.org/')`
 
 ![Náhled nastavení pro Safari.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/macos_safari_path.png)
 
-*Firefox*
+**Firefox**
 
-*Chrome*
+**Chrome**
 
 ### Linux
 
-*Firefox*
+**Firefox**
 
-*Chrome*
+**Chrome**
 
 ***
 
