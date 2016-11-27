@@ -2,7 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common import exceptions
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions
+
+
+
+
+
 
 
 browser = webdriver.Safari()
@@ -13,7 +18,7 @@ try:
     el.click()
 
     re = WebDriverWait(browser, 2).until(
-        EC.text_to_be_present_in_element((By.TAG_NAME, 'h2'), 'Downloads')
+        expected_conditions.text_to_be_present_in_element((By.TAG_NAME, 'h2'), 'Downloads')
     )
 
     print("Hooray, we are on Downloads page")
