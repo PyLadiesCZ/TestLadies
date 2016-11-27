@@ -4,11 +4,7 @@ from selenium.common import exceptions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
-
-
-
-
-
+# for Safari you don't need to set any PATH
 
 browser = webdriver.Safari()
 browser.get('http://seleniumhq.org/')
