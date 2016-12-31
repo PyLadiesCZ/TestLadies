@@ -98,7 +98,7 @@ Dobrý nápad bude, udělat si na něj další složku `Webdriver` ve složce, v
 6. Pokud jsi se řídila radou udělat složku `Webdriver` v projektu, cesta by měla být /Users/name/TestLadies/WebDriver,
  kde `name` je jméno tvého usera na kterém jsi přihlášená. Za ním vyplň celou cestu do složky WebDriver
 
-7. Ulož cestu v `nano` editoru příkazy: control+x, Y, enter
+7. Ulož cestu v `nano` editoru příkazy: control + x, Y, enter
 
 8. Vypni a zapni Terminal (změny se projeví až po jeho znovuzapnutí). Zadej příkaz `echo $PATH`, měla by jsi již vidět přidanou cestu.
 
