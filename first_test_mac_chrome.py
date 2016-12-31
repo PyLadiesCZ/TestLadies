@@ -4,6 +4,7 @@ from selenium.common.exceptions import *
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# for Chrome you need to set line bellow as PATH to driver
 browser = webdriver.Chrome('chromedriver')
 browser.get('http://seleniumhq.org/')
 

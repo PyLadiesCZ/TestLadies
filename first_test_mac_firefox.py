@@ -4,6 +4,7 @@ from selenium.common.exceptions import *
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# for FIrefox you need to set line bellow as PATH to driver
 browser = webdriver.Firefox('geckodriver')
 browser.get('http://seleniumhq.org/')
 
