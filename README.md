@@ -6,14 +6,14 @@ Work in progress.
 ***
 
 ##Před instalací
-Pokud nemáš tolik zkušeností a chceš se striktně držet tohoto návodu, bude dobré, když si nejprve založíš novou složku pojmenovanou TestLadies 
+Pokud nemáš tolik zkušeností a chceš se striktně držet tohoto návodu, bude dobré, když si nejprve založíš novou složku pojmenovanou `TestLadies` 
 ve svém počítači na místě, kde běžně vznikají tvé nové programovací projekty.
 
-Ve složce `~/TestLadies` poté vytvoř složku `WebDriver` do které si později přidáš ovladače.
+Ve složce `~/TestLadies` poté vytvoř složku `WebDrivers` do které si později přidáš ovladače.
 
-Pokud si nejsi jistá jak se vytváří spouští Python soubory, [projeď si prosím tento manuál vytvořený pro PyLadies](http://pyladies.cz/v1/s002-hello-world/hello-world.html).
+Pokud si nejsi jistá jak se vytváří a spouští Python soubory, [projeď si prosím tento manuál vytvořený pro PyLadies](http://pyladies.cz/v1/s002-hello-world/hello-world.html).
 
-##Instalace prohlížečů
+##Instalace Pythonu, virtuálního prostředí a prohlížečů
 Nejprve musíme vše správně nainstalovat a nastavit. Pokud máš již v počítači nainstalovaný Python 3 a umíš vytvořit virtuální prostředí 
 pro práci v Pythonu, máš na půl vyhráno. Pokud s tím potřebuješ pomoci, tak nejlépe postupuj 
 podle materiálů [instalace Pythonu a venv vytvořených pro PyLadies.](http://pyladies.cz/v1/s001-install/instalace.html)
@@ -72,7 +72,8 @@ XXX Doplnit k cemu drivery slouzi.
 ## Nastavení cesty pro každý prohlížeč zvlášť
 
 Nejprve si uděláme test, který nám pomůže ověřit, že máme vše připravené k testování na jednotlivých prohlížečích.
-Hotové soubory si klidně stáhni z [repozitáře TestLadies na GitHubu](https://github.com/PyLadiesCZ/TestLadies), ale pročti si i následující instrukce, zejména kvůli nastavování cest k ovladačům. 
+Hotové soubory si můžeš stáhnout z [repozitáře TestLadies na GitHubu](https://github.com/PyLadiesCZ/TestLadies), ale pročti si i následující instrukce, 
+zejména kvůli nastavení cest k ovladačům, které musíš udělat sama. 
 Stáhni si verze souborů začínající názvem `first_test_operacni-system_prohlizec.py` pro svůj operační systém a pro všechny prohlížeče.
 
 XXX poladit cesty k browseru pro kazdy prohlizec na kazdem systemu zvlast TODO Veronika a Magda
@@ -90,43 +91,52 @@ http://stackoverflow.com/questions/40269229/python-selenium-3-0-firefox-47-0-1-i
 
 **Safari**
 
-Nastavení pro Safari je naštěstí velmi jednoduché. Řeší to řádek `browser = webdriver.Safari()` ve scriptu s testem.
+Nastavení pro Safari je naštěstí velmi jednoduché. Řeší to řádek `browser = webdriver.Safari()` v souboru `first_test_macos_safari.py`.
 Ovladač pro Safari nemusíme stahovat ani nastavovat jeho cestu, Safari podporuje WebDriver nativně. 
 
-`browser.get('http://seleniumhq.org/')` - tento řádek nám v testu umožňuje prohlížeč spustit. 
-Po spuštění Python souboru s testem, se prohlížeč opravdu spustí, udělá test a opět prohlížeč vypne. V Terminalu poté vypíše výsledek testu.
+`browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
+
+***Ověř si, zda je vše nastaveno správně:*** 
+V Terminálu spusť soubor pomocí  `python first_test_macos_safari.py` (ano, v zapnutém virtuálním prostředí), se prohlížeč opravdu spustí, 
+udělá test a opět prohlížeč vypne. V Terminálu poté vypíše výsledek testu.
 
 
 ![Náhled nastavení pro Safari.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/macos_safari_path.png)
 
-**Firefox**
+**Chrome** a **Firefox**
 
-**Chrome**
-
-Pro Chrome je bohužel nastavení komplikovanější. Bude potřeba nastavit cestu na stažený ovladač pro Chrome,`chromedriver`, do $PATH na macOS.
+Pro Chrome a Firefox je bohužel nastavení komplikovanější. Bude potřeba nastavit cestu na stažené ovladače,`chromedriver` a `geckodriver`, do $PATH.
 
 ***Postup je následující:***
 
-1. po stažení `chromedriver` jej z Downloads přesuň do složky, ve které jej chceš natrvalo mít. 
-Dobrý nápad bude, udělat si na všechny  na něj další složku `Webdriver` ve složce projektu ~/TestLadies, ve které budeš spouštět testy.
+1. Stažené `chromedriver` a `geckodriver` přesuň z `Downloads`složky do složky `WebDrivers`, kterou jsi si vytvořila v ~/TestLadies.
 
-2. Otevři Terminal
+2. Otevři Terminál.
 
-3. Zadej příkaz `sudo nano /etc/paths`
+3. Zadej příkaz `sudo nano /etc/paths`.
 
-4. Vyplň své heslo (ano, heslo je při psaní skryté úmyslně)
+4. Vyplň své heslo (ano, heslo je při psaní skryté úmyslně).
 
-5. Otevřel se Ti editor `nano`, šipkami sjeď na poslední volný řádek a přidej cestu ke staženému `chromedriver`
+5. Otevřel se Ti editor `nano`, šipkami sjeď na poslední volný řádek a přidej cestu do složky `WebDrivers`
 
-6. Pokud jsi se řídila radou udělat složku `Webdriver` v projektu, cesta by měla být /Users/name/TestLadies/WebDriver,
- kde `name` je jméno tvého usera na kterém jsi přihlášená. Za ním vyplň celou cestu do složky WebDriver
+6. Pokud jsi se řídila instrukcemi, měla bys mít `WebDrivers` složku v projektu TestLadies, cesta by měla být `/Users/name/TestLadies/WebDrivers`,
+ kde `name` je jméno tvého účtu na kterém jsi přihlášená. Za ním vyplň celou cestu do složky `WebDrivers`. 
 
-7. Ulož cestu v `nano` editoru příkazy: control + x, Y, enter
+7. Ulož cestu v `nano` editoru příkazy: control + x, Y, enter.
 
-8. Vypni a zapni Terminal (změny se projeví až po jeho znovuzapnutí). Zadej příkaz `echo $PATH`, měla by jsi již vidět přidanou cestu.
+8. Vypni a zapni Terminál (změny se projeví až po jeho restartování). Zadej příkaz `echo $PATH`, měla by jsi již vidět přidanou cestu.
 
-9. Hurááá, teď budou naše testy fungovat i v Chrome.
+9. Hurááá, teď budou naše testy fungovat i v Chromu a Firefoxu.
 
+V souborech `first_test_macos_chrome.py` a `first_test_macos_firefox.py` ovladače nastavuje řádek
+`browser = webdriver.Chrome('chromedriver')` pro Chrome a `browser = webdriver.Firefox('geckodriver')` pro Firefox.
+
+`browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
+
+***Ověř si, zda je vše nastaveno správně:*** 
+
+V Terminálu spusť postupně soubory pomocí `python first_test_macos_chrome.py` a `python first_test_macos_firefox.py`(ano, v zapnutém virtuálním prostředí), se prohlížeč opravdu spustí, 
+udělá test a opět prohlížeč vypne. V Terminálu poté vypíše výsledek testu.
 
 
 ### Linux
