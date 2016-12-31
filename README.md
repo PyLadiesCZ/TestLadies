@@ -82,27 +82,27 @@ Nastavení pro Safari je naštěstí velmi jednoduché. Řeší to přidání dv
 
 Pro Chrome je bohužel nastavení komplikovanější. Bude potřeba nastavit stažený v do $PATH na Macbooku.
 
-Postup je následující:
+***Postup je následující:***
 
-..1. po stažení `chromedriver` jej z Downloads přesuň do složky, ve které jej chceš natrvalo mít. 
+1. po stažení `chromedriver` jej z Downloads přesuň do složky, ve které jej chceš natrvalo mít. 
 Dobrý nápad bude, udělat si na něj další složku `Webdriver` ve složce, ve které budeš spouštět testy.
 
-..2. Otevři Terminal
+2. Otevři Terminal
 
-..3. Zadej příkaz `sudo nano /etc/paths`
+3. Zadej příkaz `sudo nano /etc/paths`
 
-..4. Vyplň své heslo (ano, heslo je při psaní skryté úmyslně)
+4. Vyplň své heslo (ano, heslo je při psaní skryté úmyslně)
 
-..5. Otevřel se Ti editor `nano`, šipkami sjeď na poslední volný řádek a přidej cestu ke staženému `chromedriver`
+5. Otevřel se Ti editor `nano`, šipkami sjeď na poslední volný řádek a přidej cestu ke staženému `chromedriver`
 
-..6. Pokud jsi se řídila radou udělat složku `Webdriver` v projektu, cesta by měla být /Users/name/TestLadies/WebDriver,
+6. Pokud jsi se řídila radou udělat složku `Webdriver` v projektu, cesta by měla být /Users/name/TestLadies/WebDriver,
  kde `name` je jméno tvého usera na kterém jsi přihlášená. Za ním vyplň celou cestu do složky WebDriver
 
-..7. Ulož cestu v `nano` editoru příkazy: control+x, Y, enter
+7. Ulož cestu v `nano` editoru příkazy: control+x, Y, enter
 
-..8. Vypni a zapni Terminal (změny se projeví až po jeho znovuzapnutí). Zadej příkaz `echo $PATH`, měla by jsi již vidět přidanou cestu.
+8. Vypni a zapni Terminal (změny se projeví až po jeho znovuzapnutí). Zadej příkaz `echo $PATH`, měla by jsi již vidět přidanou cestu.
 
-..9. Hurááá, teď budou naše testy fungovat i v Chrome.
+9. Hurááá, teď budou naše testy fungovat i v Chrome.
 
 
 
