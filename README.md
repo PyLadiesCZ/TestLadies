@@ -96,10 +96,8 @@ Ovladač pro Safari nemusíme stahovat ani nastavovat jeho cestu, Safari podporu
 
 `browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
 
-***Ověř si, zda je vše nastaveno správně:*** 
-V Terminálu spusť soubor pomocí  `python first_test_macos_safari.py` (ano, v zapnutém virtuálním prostředí), se prohlížeč opravdu spustí, 
-udělá test a opět prohlížeč vypne. V Terminálu poté vypíše výsledek testu.
-
+***Ověř si, zda je vše nastaveno správně:***
+V Terminálu spusť soubor pomocí `python first_test_macos_safari.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
 
 ![Náhled nastavení pro Safari.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/macos_safari_path.png)
 
@@ -135,17 +133,26 @@ V souborech `first_test_macos_chrome.py` a `first_test_macos_firefox.py` ovlada�
 
 ***Ověř si, zda je vše nastaveno správně:*** 
 
-V Terminálu spusť postupně soubory pomocí `python first_test_macos_chrome.py` a `python first_test_macos_firefox.py`(ano, v zapnutém virtuálním prostředí), se prohlížeč opravdu spustí, 
-udělá test a opět prohlížeč vypne. V Terminálu poté vypíše výsledek testu.
+V Terminálu spusť postupně soubory pomocí `python first_test_macos_chrome.py` a `python first_test_macos_firefox.py`(ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
 
 
 ### Linux
 
-**Firefox**
-
 **Chrome**
 
-***
+Nastavení ovladače pro Chrome je naštěstí velmi jednoduché. Řeší ho řádek `browser = webdriver.Chrome('chromedriver')` v souboru `first_test_linux_chrome.py`.
+
+***Ověř si, zda je vše nastaveno správně:*** 
+V Terminálu spusť soubor pomocí `python first_test_linux_chrome.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
+
+
+**Firefox**
+
+Nastavení ovladače pro Firefox je trochu složitější.
+
+***Ověř si, zda je vše nastaveno správně:*** 
+V Terminálu spusť soubor pomocí `python first_test_linux_firefox.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
+
 
 **Oficiální dokumentace k Seleniu**
 
