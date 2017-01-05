@@ -45,10 +45,13 @@ najdeš příkazy, kterými jej nainstaluješ v příkazové řádce. Postup se 
 
 ![Použij jednotlivé příkazy.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_selenium_install.png)
 
-## Instalace ovladačů - Windows, macOS, Linux
+## Instalace ovladačů
+
 Teď si nainstalujeme ovladače (drivery) pro jednotlivé prohlížeče. 
 Nezapomeň je nainstalovat pro všechny prohlížeče, na kterých budeš testovat. Pro **Windows** tedy Internet Explorer, Firefox, Chrome. 
 Na **macOS** pro Safari, Firefox a Chrome. Na **Linux** Firefox a Chrome.
+
+XXX Doplnit k cemu drivery slouzi.
 
 **Ovladače:**
 
@@ -58,7 +61,9 @@ Na **macOS** pro Safari, Firefox a Chrome. Na **Linux** Firefox a Chrome.
 
  pro IE - Microsoft Edge Driver
 
- pro Chrome -  Google Chrome Driver
+ pro Chrome - Google Chrome Driver
+
+### Instalace na Windows a macOS
 
 Instalace ovladačů najdeš na stránce až po scrollování kousek níž [zde](http://docs.seleniumhq.org/download/)
 
@@ -66,8 +71,78 @@ Stáhni si je a nainstaluj poklepáním.
 
 ![Ovladače najdeš na stránce až po scrollování kousek níž.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_drivers_install.png)
 
- 
-XXX Doplnit k cemu drivery slouzi.
+### Instalace na Linux
+
+Instalaci ovladačů pro Chrome a Firefox na Linux provedeme v Terminálu.
+
+#### Chrome
+
+Balík s ovladačem chromedriver stáhneme ze [stránky](https://sites.google.com/a/chromium.org/chromedriver/downloads/) pomocí příkazu `wget`.
+pro Linux 32bit:
+```
+wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux32.zip
+```
+pro Linux 64bit:
+```
+wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
+```
+
+Rozbalíme ho pomocí `unzip`
+pro Linux 32bit:
+```
+unzip chromedriver_linux32.zip
+```
+pro Linux 64bit:
+```
+unzip chromedriver_linux64.zip
+```
+
+Přesuneme ho do /usr/local/bin, aby byl v proměnné prostředí `$PATH`: 
+```
+sudo mv chromedriver /usr/local/bin/
+```
+
+Ověříme, že je na správném místě a že je spustitelný: 
+```
+which chromedriver
+```
+
+Hotovo.
+
+#### Firefox
+
+Balík s ovladačem geckodriver stáhneme ze [stránky](https://github.com/mozilla/geckodriver/releases) pomocí příkazu `wget`.
+pro Linux 32bit: 
+```
+wget https://github.com/mozilla/geckodriver/releases/download/v0.12.0/geckodriver-v0.12.0-linux32.tar.gz
+```
+pro Linux 64bit: 
+```
+wget https://github.com/mozilla/geckodriver/releases/download/v0.12.0/geckodriver-v0.12.0-linux64.tar.gz
+```
+
+Rozbalíme ho pomocí `tar xzf` (tzn. rozbalit zazipovaný tar archiv)
+pro Linux 32bit:
+```
+tar xzf geckodriver-v0.12.0-linux32.tar.gz
+```
+pro Linux 64bit:
+```
+tar xzf geckodriver-v0.12.0-linux64.tar.gz
+```
+
+Přesuneme ho do /usr/local/bin, aby byl v proměnné prostředí `$PATH`: 
+```
+sudo mv geckodriver /usr/local/bin/
+```
+
+Ověříme, že je na správném místě a že je spustitelný: 
+```
+which geckodriver
+```
+
+Hotovo.
+
 
 ## Nastavení cesty pro každý prohlížeč zvlášť
 
@@ -81,15 +156,15 @@ http://stackoverflow.com/questions/40269229/python-selenium-3-0-firefox-47-0-1-i
 
 ### Windows
 
-**Internet Explorer**
+#### Internet Explorer
 
-**Firefox**
+#### Firefox
 
-**Chrome**
+#### Chrome
 
 ### macOS
 
-**Safari**
+#### Safari
 
 Nastavení pro Safari je naštěstí velmi jednoduché. Řeší to řádek `browser = webdriver.Safari()` v souboru `first_test_macos_safari.py`.
 Ovladač pro Safari nemusíme stahovat ani nastavovat jeho cestu, Safari podporuje WebDriver nativně. 
@@ -101,11 +176,11 @@ V Terminálu spusť soubor pomocí `python first_test_macos_safari.py` (ano, v z
 
 ![Náhled nastavení pro Safari.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/macos_safari_path.png)
 
-**Chrome** a **Firefox**
+#### Chrome a Firefox
 
 Pro Chrome a Firefox je bohužel nastavení komplikovanější. Bude potřeba nastavit cestu na stažené ovladače,`chromedriver` a `geckodriver`, do $PATH.
 
-***Postup je následující:***
+**Postup je následující:**
 
 1. Stažené `chromedriver` a `geckodriver` přesuň z `Downloads`složky do složky `WebDrivers`, kterou jsi si vytvořila v ~/TestLadies.
 
@@ -131,27 +206,23 @@ V souborech `first_test_macos_chrome.py` a `first_test_macos_firefox.py` ovlada�
 
 `browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
 
-***Ověř si, zda je vše nastaveno správně:*** 
+**Ověř si, zda je vše nastaveno správně:** 
 
 V Terminálu spusť postupně soubory pomocí `python first_test_macos_chrome.py` a `python first_test_macos_firefox.py`(ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
 
 
 ### Linux
 
-**Chrome**
+#### Chrome a Firefox
 
-Nastavení ovladače pro Chrome je naštěstí velmi jednoduché. Řeší ho řádek `browser = webdriver.Chrome('chromedriver')` v souboru `first_test_linux_chrome.py`.
+Nastavení ovladačů pro Linux je velmi jednoduché díky přesunu driveru do `/usr/local/bin/`, který jsme provedli už při instalaci.
 
-***Ověř si, zda je vše nastaveno správně:*** 
-V Terminálu spusť soubor pomocí `python first_test_linux_chrome.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
+V souborech `first_test_linux_chrome.py` a `first_test_linux_firefox.py` ovladače nastavuje řádek `browser = webdriver.Chrome('chromedriver')` pro Chrome a `browser = webdriver.Firefox()` pro Firefox.
 
+**Ověř si, zda je vše nastaveno správně:** 
 
-**Firefox**
+V Terminálu spusť postupně soubory pomocí `python first_test_linux_chrome.py` a `python first_test_linux_firefox.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
 
-Nastavení ovladače pro Firefox je trochu složitější.
-
-***Ověř si, zda je vše nastaveno správně:*** 
-V Terminálu spusť soubor pomocí `python first_test_linux_firefox.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v Terminálu se vypíše výsledek testu.
 
 
 **Oficiální dokumentace k Seleniu**
