@@ -77,7 +77,8 @@ Instalaci ovladačů pro Chrome a Firefox na Linux provedeme v Terminálu.
 
 #### Chrome
 
-Balík s ovladačem chromedriver stáhneme ze [stránky](https://sites.google.com/a/chromium.org/chromedriver/downloads/) pomocí příkazu `wget`.
+Balík s ovladačem chromedriver stáhneme ze [webu](https://sites.google.com/a/chromium.org/chromedriver/downloads/) pomocí příkazu `wget`
+
 pro Linux 32bit:
 ```
 wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux32.zip
@@ -88,6 +89,7 @@ wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
 ```
 
 Rozbalíme ho pomocí `unzip`
+
 pro Linux 32bit:
 ```
 unzip chromedriver_linux32.zip
@@ -97,7 +99,7 @@ pro Linux 64bit:
 unzip chromedriver_linux64.zip
 ```
 
-Přesuneme ho do /usr/local/bin, aby byl v proměnné prostředí `$PATH`: 
+Přesuneme ho do `/usr/local/bin/`, aby byl v proměnné prostředí `$PATH`: 
 ```
 sudo mv chromedriver /usr/local/bin/
 ```
@@ -111,7 +113,8 @@ Hotovo.
 
 #### Firefox
 
-Balík s ovladačem geckodriver stáhneme ze [stránky](https://github.com/mozilla/geckodriver/releases) pomocí příkazu `wget`.
+Balík s ovladačem geckodriver stáhneme ze [stránky](https://github.com/mozilla/geckodriver/releases) pomocí příkazu `wget`
+
 pro Linux 32bit: 
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.12.0/geckodriver-v0.12.0-linux32.tar.gz
@@ -122,6 +125,7 @@ wget https://github.com/mozilla/geckodriver/releases/download/v0.12.0/geckodrive
 ```
 
 Rozbalíme ho pomocí `tar xzf` (tzn. rozbalit zazipovaný tar archiv)
+
 pro Linux 32bit:
 ```
 tar xzf geckodriver-v0.12.0-linux32.tar.gz
@@ -131,7 +135,7 @@ pro Linux 64bit:
 tar xzf geckodriver-v0.12.0-linux64.tar.gz
 ```
 
-Přesuneme ho do /usr/local/bin, aby byl v proměnné prostředí `$PATH`: 
+Přesuneme ho do `/usr/local/bin/`, aby byl v proměnné prostředí `$PATH`: 
 ```
 sudo mv geckodriver /usr/local/bin/
 ```
