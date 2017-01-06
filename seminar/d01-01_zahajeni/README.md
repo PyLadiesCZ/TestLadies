@@ -53,11 +53,33 @@ Dnešní program
 ************
 
 
+Oveření instalace
+-----------------
+
+_tohle se dělá před kurzem individuálně_
+
+- zkontrolovat, ze je ucet na github
+- zapnout terminal
+- cd do adresare urceneho na kurz
+- vytvorit virtualenv do `./venv` a zapnout
+- git clone https://github.com/pyladies.cz/testladies repo
+- cd repo/install
+
+```
+$ python ./win_simple_test.py
+$ python ./mac_simple_test.py
+$ python ./linux_simple_test.py
+```
+
+pokud napise `test OK` tak je instalace ok
+
+
+************
+
 Checklist
 -----------
 
 - Vlastní notebook
-- Na win nainstalovaný alternativní prohlížeč (chrome / firefox)
 - Psaní na “programátorské” klávesnici - závorky, uvozovky
 - Pohyb v terminálu - cd, ls / dir
 - Základní znalost konceptů programování - for cyklus, if
@@ -65,3 +87,5 @@ Checklist
 - Účet na githubu
 - Umět udělat screenshot
 - soutěž
+
+
