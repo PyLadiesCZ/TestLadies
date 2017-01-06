@@ -67,8 +67,7 @@ XXX Doplnit k cemu drivery slouzi.
 
 Instalace ovladačů najdeš na stránce až po scrollování kousek níž [zde](http://docs.seleniumhq.org/download/)
 
-Stáhni si je a nainstaluj poklepáním.
-
+Stáhni si je a přesuň do složky `WebDrivers`. 
 ![Ovladače najdeš na stránce až po scrollování kousek níž.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_drivers_install.png)
 
 ### Instalace na Linux
@@ -160,11 +159,27 @@ http://stackoverflow.com/questions/40269229/python-selenium-3-0-firefox-47-0-1-i
 
 ### Windows
 
-#### Internet Explorer
+#### Internet Explorer - TODO NEFUNGUJE. Evidentne nenajde class.
 
 #### Firefox
 
+Nastavení pro Firefox je snadné. Řeší to řádek `browser = webdriver.Firefox()` v souboru `first_test_win_firefox.py`. Driver pro Firefox musíš mít ve složce s projektem `WebDrivers` a další nastavení PATH by již nemělo být potřeba.
+
+`browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
+
+***Ověř si, zda je vše nastaveno správně:***
+V příkazové řádce spusť soubor pomocí `python first_test_win_firefox.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v příkazové řádce se vypíše výsledek testu.
+
+Pokud test spadl, zkus místo souboru `first_test_win_firefox.py` spustit soubor `first_test_win_ff.py` je to trochu jiná verze s nastavením PATH.
+
 #### Chrome
+
+Nastavení pro Chrome je také snadné. Řeší to řádek `browser = webdriver.Chrome()` v souboru `first_test_win_chrome.py`. Driver pro Chrome musíš mít ve složce `WebDrivers` s projektem a další nastavení PATH by již nemělo být potřeba.
+
+`browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
+
+***Ověř si, zda je vše nastaveno správně:***
+V příkazové řádce spusť soubor pomocí `python first_test_win_chrome.py` (ano, v zapnutém virtuálním prostředí). Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v příkazové řádce se vypíše výsledek testu.
 
 ### macOS
 
