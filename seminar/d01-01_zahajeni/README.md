@@ -66,13 +66,12 @@ _tohle se dělá před kurzem individuálně_
 - cd repo/install
 
 ```
-$ python ./win_simple_test.py
-$ python ./mac_simple_test.py
-$ python ./linux_simple_test.py
+$ python ./test_installation.py
 ```
 
-pokud napise `test OK` tak je instalace ok
+pokud napise `Test OK` tak je instalace ok, jinak napíše `Sorry, it didn't work`
 
+_diky tomu ze jedeme jen v Chrome na vsech platformach, muzeme poustet stejny script_
 
 ************
 
