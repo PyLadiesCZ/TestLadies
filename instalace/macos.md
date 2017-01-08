@@ -73,7 +73,7 @@ Driver pro Chrome musíš mít přesunutý ve složce `WebDrivers` s projektem, 
 
 **Postup je následující:**
 
-1. Stažené `chromedriver` a `geckodriver` přesuň z `Downloads`složky do složky `WebDrivers`, kterou jsi si vytvořila v ~/TestLadies.
+1. Stažený `chromedriver` přesuň z `Downloads` složky do složky `WebDrivers`, kterou jsi si vytvořila v ~/TestLadies.
 
 2. Otevři Terminál.
 
@@ -90,7 +90,7 @@ Driver pro Chrome musíš mít přesunutý ve složce `WebDrivers` s projektem, 
 
 8. Vypni a zapni Terminál (změny se projeví až po jeho restartování). Zadej příkaz `echo $PATH`, měla by jsi již vidět přidanou cestu.
 
-9. Hurááá, teď budou naše testy fungovat i v Chromu a Firefoxu.
+9. Hurááá, teď budou naše testy fungovat v Chrome.
 
 `browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
 
