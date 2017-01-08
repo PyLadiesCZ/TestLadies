@@ -23,7 +23,11 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - vytvořené virtuální prostředí
  - spuštěné virtuální prostředí - příkaz ```source venv/bin/activate```
  - nainstalovaný prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
- - účet na GitHubu
+ - účet na [GitHubu](https://github.com/)
+ - máš v počítači nainstalovaný [Git](http://pyladies.cz/v1/s001-install/git.html) a [Editor](http://pyladies.cz/v1/s002-hello-world/editor.html)
+ - zmáknutý pohyb v Terminálu cd, ls nebo dir, nano, mkdir, rm, ovladat šipku nahoru a TAB (pokud máš nastavené autodoplňování na TAB)
+ - základní znalost konceptů programování v Pythonu - for cyklus, if, def
+ - umíš na svém počítači udělat screenshot obrazovky i s výřezem (budeme při kurzu uplatňovat) a víš, kde poté soubory jsou
 
 ***
 
@@ -53,7 +57,7 @@ Stáhni si Google Chrome Driver do složky `WebDrivers`.
 Uděláme si test, který nám pomůže ověřit, že máme vše připravené k testování na Chrome.
 Hotový soubor `test_installation.py` s testem najdeme v repozitáři TestLadies na GitHubu, [ze složky instalace.](https://github.com/PyLadiesCZ/TestLadies/tree/master/instalace) 
 
-Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano ve složce TestLadies tedy budeš mít dvě složky - `WebDrivers` a `TestLadies`. 
+Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano ve složce TestLadies tedy budeš mít po naklonování dvě složky - `WebDrivers` a `TestLadies`. 
 Repozitář naklonuješ pomocí příkazu:
 ```git clone https://github.com/PyLadiesCZ/TestLadies```
 
