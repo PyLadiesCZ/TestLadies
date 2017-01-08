@@ -1,4 +1,4 @@
-# Instalace pro Linux
+# Instalace pro Windows
 
 ## Před instalací
 Pokud nemáš ještě tolik zkušeností, bude dobré, když se budeš držet tohoto návodu včetně pojmenování složek.  
