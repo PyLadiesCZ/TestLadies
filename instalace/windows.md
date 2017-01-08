@@ -23,7 +23,7 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - nainstalovanou poslední stabilní verzi Python 3 (v době psaní tohoto textu to byla 3.5.2)
  - vytvořené virtuální prostředí
  - spuštěné virtuální prostředí - příkaz ```venv\Scripts\activate```
- - nainstalovaný prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+ - nainstalovaný prohlížeč [Chrome verze 54 nebo vyšší](https://www.google.com/chrome/browser/desktop/index.html)
  - účet na [GitHubu](https://github.com/)
  - máš v počítači nainstalovaný [Git](http://pyladies.cz/v1/s001-install/git.html) a [Editor](http://pyladies.cz/v1/s002-hello-world/editor.html)
  - zmáknutý pohyb v Terminálu cd, ls nebo dir, nano, mkdir, rm, ovladat šipku nahoru a TAB (pokud máš nastavené autodoplňování na TAB)
