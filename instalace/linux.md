@@ -44,9 +44,9 @@ najdeš příkaz, kterým jej nainstaluješ v příkazové řádce.
 
 ***
 
-### Instalace na Linux
+## Instalace ovladače
 
-Instalaci ovladačů pro Chrome a Firefox na Linux provedeme v Terminálu.
+Teď si nainstalujeme ovladač (driver) pro Chrome - Google Chrome Driver
 
 #### Chrome
 

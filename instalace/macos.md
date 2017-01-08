@@ -46,7 +46,7 @@ najdeš příkaz, kterým jej nainstaluješ v příkazové řádce.
 
 ***
 
-## Instalace ovladačů
+## Instalace ovladače
 
 Teď si nainstalujeme ovladač (driver) pro Chrome - Google Chrome Driver
 
