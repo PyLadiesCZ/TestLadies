@@ -62,7 +62,7 @@ _tohle se dělá před kurzem individuálně_
 - zapnout terminal
 - cd do adresare urceneho na kurz
 - vytvorit virtualenv do `./venv` a zapnout
-- git clone https://github.com/pyladies.cz/testladies repo
+- git clone https://github.com/PyLadiesCZ/TestLadies repo
 - cd repo/install
 
 ```
