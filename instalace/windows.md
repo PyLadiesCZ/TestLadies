@@ -21,7 +21,7 @@ Než budeš instalovat dál, předpokladem je, že máš:
 
  - nainstalovanou poslední stabilní verzi Python 3 (v době psaní tohoto textu to byla 3.5.2)
  - vytvořené virtuální prostředí
- - spuštěné virtuální prostředí - příkaz ```source venv/bin/activate```
+ - spuštěné virtuální prostředí - příkaz ```venv\Scripts\activate```
  - nainstalovaný prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
  - účet na [GitHubu](https://github.com/)
  - máš v počítači nainstalovaný [Git](http://pyladies.cz/v1/s001-install/git.html) a [Editor](http://pyladies.cz/v1/s002-hello-world/editor.html)
@@ -29,7 +29,7 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - zmáknutou základní práci s [Git](http://pyladies.cz/v1/s009-git/git.html) a [posíláním commitů na GitHub](http://pyladies.cz/v1/s005-modules/opensource.html)
  - základní znalost konceptů programování v Pythonu - for cyklus, if, def
  - umíš na svém počítači udělat screenshot obrazovky i s výřezem (budeme při kurzu uplatňovat) a víš, kde poté soubory jsou
- - máš nějaké hrubé základy HTML/CSS
+ - máš nějaké hrubé základy HTML/CSS - div, class ...
 
 ***
 

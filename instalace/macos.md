@@ -31,7 +31,7 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - zmáknutou základní práci s [Git](http://pyladies.cz/v1/s009-git/git.html) a [posíláním commitů na GitHub](http://pyladies.cz/v1/s005-modules/opensource.html)
  - základní znalost konceptů programování v Pythonu - for cyklus, if, def
  - umíš na svém počítači udělat screenshot obrazovky i s výřezem (budeme při kurzu uplatňovat) a víš, kde poté soubory jsou
- - máš nějaké hrubé základy HTML/CSS
+ - máš nějaké hrubé základy HTML/CSS - div, class ...
 
 ***
 
