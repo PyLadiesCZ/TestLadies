@@ -3,7 +3,7 @@
 ## Před instalací
 Pokud nemáš ještě tolik zkušeností, bude dobré, když se budeš držet tohoto návodu včetně pojmenování složek.  
 Nejprve si založ novou složku pojmenovanou `TestLadies`, ve svém počítači na místě, kde běžně vznikají tvé nové programovací projekty.
-V té si vytvoř ještě složku `WebDrivers` do které později stáhneš ovladač.
+Ve složce ~/TestLadies poté vytvoř složku WebDrivers do které si později přidáš ovladače.
 
 Pokud si nejsi jist/á jak se vytváří a spouští Python soubory, 
 [projeď si prosím tento manuál vytvořený pro PyLadies](http://pyladies.cz/v1/s002-hello-world/hello-world.html).
