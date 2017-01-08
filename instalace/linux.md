@@ -39,7 +39,7 @@ Pro automatické testování budeme používat nástroj Selenium. Je to skvělý
 Má podporu pro Firefox, Chrome, Internet Explorer i Safari. Na tomto [odkazu](https://pypi.python.org/pypi/selenium) 
 najdeš příkaz, kterým jej nainstaluješ v příkazové řádce.
 
-**Nezapomeň, že bys měla mít před instalacemi spuštěné virtuální prostředí.**
+**Nezapomeň, že bys měl/a mít před instalacemi spuštěné virtuální prostředí.**
 
 ![Instalace Selenia](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_selenium_install.png)
 
@@ -88,9 +88,9 @@ Hotovo. :-)
 ## Nastavení cesty (PATH) k ovladači
 
 Uděláme si test, který nám pomůže ověřit, že máme vše připravené k testování na Chrome.
-Hotový soubor `test_installation.py` s testem najdeme v repozitáři TestLadies na GitHubu, [ze složky instalace.](https://github.com/PyLadiesCZ/TestLadies/tree/master/instalace) 
+Hotový soubor `test_installation.py` s testem najdeš v repozitáři TestLadies na GitHubu, [ze složky instalace.](https://github.com/PyLadiesCZ/TestLadies/tree/master/instalace) 
 
-Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano ve složce TestLadies tedy po naklonování budeš mít další složku `TestLadies`. 
+Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano, ve složce TestLadies tedy po naklonování budeš mít další složku `TestLadies`. 
 Repozitář naklonuješ pomocí příkazu:
 
 ```
@@ -106,7 +106,7 @@ Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlíže�
 Pokud máš vše nainstalováno správně, v Terminálu se vypíše `Test OK`, pokud je něco špatně, test spadne 
 (v tu chvili je něco špatně s instalacemi a je nutné to vyřešit před kurzem), případně vypíše `Sorry, it didn't work`.
 
-Pokud něco nedopadlo správně a potřebuješ poradit. Napiš nám na praha@pyladies.cz
+Pokud něco nedopadlo správně a potřebuješ poradit. Napiš nám na praha@pyladies.cz, nejlépe udělej screenshot chyby a pošli ho v příloze.
 
 ***
 
