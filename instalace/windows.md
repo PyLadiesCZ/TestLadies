@@ -3,7 +3,6 @@
 ## Před instalací
 Pokud nemáš ještě tolik zkušeností, bude dobré, když se budeš držet tohoto návodu včetně pojmenování složek.  
 Nejprve si založ novou složku pojmenovanou `TestLadies`, ve svém počítači na místě, kde běžně vznikají tvé nové programovací projekty.
-Ve složce ~/TestLadies poté vytvoř složku WebDrivers do které si později přidáš ovladače.
 
 Pokud si nejsi jist/á jak se vytváří a spouští Python soubory, 
 [projeď si prosím tento manuál vytvořený pro PyLadies](http://pyladies.cz/v1/s002-hello-world/hello-world.html).
@@ -52,7 +51,8 @@ Teď si nainstalujeme ovladač (driver) pro Chrome - Google Chrome Driver
 
 Ovladač najdeš na stránce až po scrollování kousek níž [zde](http://docs.seleniumhq.org/download/)
 
-Stáhni si Google Chrome Driver do složky `WebDrivers`. 
+Stáhni si Google Chrome Driver do složky puvodní složky `TestLadies` a také do \TestLadies\TestLadies\instalace (toto druhé stažení bude jen pro spuštění testu, který řekne, zdali máš instalace správně)
+
 ![Ovladače najdeš na stránce až po scrollování kousek níž.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_drivers_install.png)
 
 ## Nastavení cesty (PATH) k ovladači
@@ -60,15 +60,14 @@ Stáhni si Google Chrome Driver do složky `WebDrivers`.
 Uděláme si test, který nám pomůže ověřit, že máme vše připravené k testování na Chrome.
 Hotový soubor `test_installation.py` s testem najdeš v repozitáři TestLadies na GitHubu, [ve složce instalace.](https://github.com/PyLadiesCZ/TestLadies/tree/master/instalace) 
 
-Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano, ve složce TestLadies tedy budeš mít po naklonování dvě složky - `WebDrivers` a `TestLadies`. 
+Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano, ve složce TestLadies tedy budeš mít po naklonování také složku `TestLadies`. 
 
 Repozitář naklonuješ pomocí příkazu:
 
 ```
 git clone https://github.com/PyLadiesCZ/TestLadies
 ```
-
-Nastavení PATH pro Chrome na Windows je snadné. Řeší to řádek `browser = webdriver.Chrome('chromedriver')` v souboru `test_installation.py`. 
+Nastavení cesty k `chromedriver` řeší řádek `browser = webdriver.Chrome('chromedriver')` v souboru `test_installation.py`. 
 Driver pro Chrome musíš mít přesunutý ve složce `WebDrivers`, dale již není potřeba nastavovat PATH.
 
 ***
