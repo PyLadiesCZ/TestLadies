@@ -55,6 +55,7 @@ Ovladač najdeš na stránce až po scrollování kousek níž [zde](http://docs
 
 Stáhni si Google Chrome Driver do složky `WebDrivers`. 
 ![Ovladače najdeš na stránce až po scrollování kousek níž.](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_drivers_install.png)
+Pote jdi do nastavení Macbooku (System Preferences -> Security & Privacy) a zde se po kliknutí na zámeček vlevo dole přihlaš. Pravděpodobně nad ním budeš mít informaci, že `chromedriver` je blokovan. Povol jeho otevirani na trvalo. 
 
 ## Nastavení cesty (PATH) k ovladači
 
@@ -69,7 +70,7 @@ git clone https://github.com/PyLadiesCZ/TestLadies
 ```
 
 Nastavení PATH pro Chrome na macOS dá trochu práce. Řeší to řádek `browser = webdriver.Chrome('chromedriver')` v souboru `test_installation.py`. 
-Driver pro Chrome musíš mít přesunutý ve složce `WebDrivers` s projektem, ale je i tak potřeba nastavit PATH.
+Driver pro Chrome musíš mít přesunutý ve složce `WebDrivers` s projektem, ale je i tak potřeba nastavit PATH. 
 
 **Postup je následující:**
 
