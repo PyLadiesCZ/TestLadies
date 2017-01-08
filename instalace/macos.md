@@ -68,7 +68,7 @@ Repozitář naklonuješ pomocí příkazu:
 git clone https://github.com/PyLadiesCZ/TestLadies
 ```
 
-Nastavení PATH pro Chrome na macOS dá trochu práce. Řeší to řádek `browser = webdriver.Chrome('chrome')` v souboru `test_installation.py`. 
+Nastavení PATH pro Chrome na macOS dá trochu práce. Řeší to řádek `browser = webdriver.Chrome('chromedriver')` v souboru `test_installation.py`. 
 Driver pro Chrome musíš mít přesunutý ve složce `WebDrivers` s projektem, ale je i tak potřeba nastavit PATH.
 
 **Postup je následující:**
