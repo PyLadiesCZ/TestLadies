@@ -3,6 +3,7 @@
 ## Před instalací
 Pokud nemáš ještě tolik zkušeností, bude dobré, když se budeš držet tohoto návodu včetně pojmenování složek.  
 Nejprve si založ novou složku pojmenovanou `TestLadies`, ve svém počítači na místě, kde běžně vznikají tvé nové programovací projekty.
+V té si vytvoř ještě složku `WebDrivers` do které později stáhneš ovladač.
 
 Pokud si nejsi jist/á jak se vytváří a spouští Python soubory, 
 [projeď si prosím tento manuál vytvořený pro PyLadies](http://pyladies.cz/v1/s002-hello-world/hello-world.html).
@@ -39,7 +40,7 @@ Pro automatické testování budeme používat nástroj Selenium. Je to skvělý
 Má podporu pro Firefox, Chrome, Internet Explorer i Safari. Na tomto [odkazu](https://pypi.python.org/pypi/selenium) 
 najdeš příkaz, kterým jej nainstaluješ v příkazové řádce.
 
-**Nezapomeň, že bys měla mít před instalacemi spuštěné virtuální prostředí.**
+**Nezapomeň, že bys měl/a mít před instalacemi spuštěné virtuální prostředí.**
 
 ![Instalace Selenia](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_selenium_install.png)
 
@@ -57,9 +58,9 @@ Stáhni si Google Chrome Driver do složky `WebDrivers`.
 ## Nastavení cesty (PATH) k ovladači
 
 Uděláme si test, který nám pomůže ověřit, že máme vše připravené k testování na Chrome.
-Hotový soubor `test_installation.py` s testem najdeme v repozitáři TestLadies na GitHubu, [ze složky instalace.](https://github.com/PyLadiesCZ/TestLadies/tree/master/instalace) 
+Hotový soubor `test_installation.py` s testem najdeš v repozitáři TestLadies na GitHubu, [ve složce instalace.](https://github.com/PyLadiesCZ/TestLadies/tree/master/instalace) 
 
-Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano ve složce TestLadies tedy budeš mít po naklonování dvě složky - `WebDrivers` a `TestLadies`. 
+Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano, ve složce TestLadies tedy budeš mít po naklonování dvě složky - `WebDrivers` a `TestLadies`. 
 
 Repozitář naklonuješ pomocí příkazu:
 
@@ -68,17 +69,17 @@ git clone https://github.com/PyLadiesCZ/TestLadies
 ```
 
 Nastavení PATH pro Chrome na Windows je snadné. Řeší to řádek `browser = webdriver.Chrome('chrome')` v souboru `test_installation.py`. 
-Driver pro Chrome musíš mít ve složce `WebDrivers`, dale již není potřeba nastavovat PATH.
+Driver pro Chrome musíš mít přesunutý ve složce `WebDrivers`, dale již není potřeba nastavovat PATH.
 
 ***
 
 ***Ověř si, zda je vše nastaveno správně:***
-V příkazové řádce spusť soubor z nově naklonované složky `TestLadies` pomocí `python test_installation.py` (ano, v zapnutém virtuálním prostředí). 
+V příkazové řádce spusť soubor z nově naklonované repozitory `TestLadies` pomocí `python test_installation.py` (ano, v zapnutém virtuálním prostředí). 
 Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v příkazové řádce se vypíše výsledek testu.
 Pokud máš vše nainstalováno správně, v Terminálu se vypíše `Test OK`, pokud je něco špatně, test spadne 
 (v tu chvili je něco špatně s instalacemi a je nutné to vyřešit před kurzem), případně vypíše `Sorry, it didn't work`.
 
-Pokud něco nedopadlo správně a potřebuješ poradit. Napiš nám na praha@pyladies.cz
+Pokud něco nedopadlo správně a potřebuješ poradit. Napiš nám na praha@pyladies.cz nejlépe udělej screenshot chyby a pošli jej v příloze.
 
 ***
 
