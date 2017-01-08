@@ -26,6 +26,7 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - účet na [GitHubu](https://github.com/)
  - máš v počítači nainstalovaný [Git](http://pyladies.cz/v1/s001-install/git.html) a [Editor](http://pyladies.cz/v1/s002-hello-world/editor.html)
  - zmáknutý pohyb v Terminálu cd, ls nebo dir, nano, mkdir, rm, ovladat šipku nahoru a TAB (pokud máš nastavené autodoplňování na TAB)
+ - zmáknutou základní práci s [Git](http://pyladies.cz/v1/s009-git/git.html) a [posíláním commitů na GitHub](http://pyladies.cz/v1/s005-modules/opensource.html)
  - základní znalost konceptů programování v Pythonu - for cyklus, if, def
  - umíš na svém počítači udělat screenshot obrazovky i s výřezem (budeme při kurzu uplatňovat) a víš, kde poté soubory jsou
  - máš nějaké hrubé základy HTML/CSS
@@ -91,7 +92,10 @@ Hotový soubor `test_installation.py` s testem najdeme v repozitáři TestLadies
 
 Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano ve složce TestLadies tedy po naklonování budeš mít další složku `TestLadies`. 
 Repozitář naklonuješ pomocí příkazu:
-```git clone https://github.com/PyLadiesCZ/TestLadies```
+
+```
+git clone https://github.com/PyLadiesCZ/TestLadies
+```
 
 Nastavení ovladačů pro Linux je velmi jednoduché díky přesunu driveru do `/usr/local/bin/`, který jsme provedli už při instalaci. 
 Řeší to poté řádek `browser = webdriver.Chrome('chrome')` v souboru `test_installation.py`.
