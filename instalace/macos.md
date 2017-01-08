@@ -1,4 +1,4 @@
-## Instalace pro macOS
+# Instalace pro macOS
 
 ## Před instalací
 Pokud nemáš ještě tolik zkušeností, bude dobré, když se budeš držet tohoto návodu včetně pojmenování složek.  
@@ -8,6 +8,8 @@ Ve složce `~/TestLadies` poté vytvoř složku `WebDrivers` do které si pozdě
 
 Pokud si nejsi jistá jak se vytváří a spouští Python soubory, 
 [projeď si prosím tento manuál vytvořený pro PyLadies](http://pyladies.cz/v1/s002-hello-world/hello-world.html).
+
+***
 
 ## Instalace Pythonu, virtuálního prostředí a prohlížečů
 Nejprve musíme vše správně nainstalovat a nastavit. Pokud máš již v počítači nainstalovaný Python 3 (pokud máš Python 2 a potřebuješ jej uchovat, 
@@ -34,6 +36,8 @@ najdeš příkaz, kterým jej nainstaluješ v příkazové řádce.
 **Nezapomeň, že bys měla mít před instalacemi spuštěné virtuální prostředí.**
 
 ![Instalace Selenia](https://github.com/PyLadiesCZ/TestLadies/blob/master/img/all_os_selenium_install.png)
+
+***
 
 ## Instalace ovladačů
 
@@ -66,9 +70,9 @@ Driver pro Chrome musíš mít ve složce `WebDrivers` s projektem ale je i tak 
 
 4. Vyplň své heslo (ano, heslo je při psaní skryté úmyslně).
 
-5. Otevřel se Ti editor `nano`, šipkami sjeď na poslední volný řádek a přidej cestu do složky `WebDrivers`
+5. Otevřel se editor `nano`, šipkami sjeď na poslední volný řádek a přidej cestu do složky `WebDrivers`
 
-6. Pokud jsi se řídila instrukcemi, měla bys mít `WebDrivers` složku v projektu TestLadies, cesta by měla být `/Users/name/TestLadies/WebDrivers`,
+6. Pokud jsi se řídil/a instrukcemi, měla bys mít `WebDrivers` složku v projektu TestLadies, cesta by měla být `/Users/name/slozka_kde_delas_bezne_projekty/TestLadies/WebDrivers`,
  kde `name` je jméno tvého účtu na kterém jsi přihlášená. Za ním vyplň celou cestu do složky `WebDrivers`. 
 
 7. Ulož cestu v `nano` editoru příkazy: control + x, Y, enter.
@@ -79,6 +83,8 @@ Driver pro Chrome musíš mít ve složce `WebDrivers` s projektem ale je i tak 
 
 `browser.get('http://seleniumhq.org/')` - tento řádek nám umožňuje prohlížeč spustit a provést v něm test.
 
+***
+
 ***Ověř si, zda je vše nastaveno správně:***
 V příkazové řádce spusť soubor z nově naklonované složky `TestLadies` pomocí `python test_installation.py` (ano, v zapnutém virtuálním prostředí). 
 Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v příkazové řádce se vypíše výsledek testu.
@@ -86,6 +92,8 @@ Pokud máš vše nainstalováno správně, v Terminálu se vypíše `Test OK`, p
 (v tu chvili je něco špatně s instalacemi a je nutné to vyřešit před kurzem), případně vypíše `Sorry, it didn't work`.
 
 Pokud něco nedopadlo správně a potřebuješ poradit. Napiš nám na praha@pyladies.cz
+
+***
 
 **Oficiální dokumentace k Seleniu**
 
