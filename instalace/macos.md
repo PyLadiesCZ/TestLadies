@@ -17,6 +17,8 @@ vyřešíš to nainstalováním Pythonu 3 do virtualenv přímo ve složce proje
 pro práci v Pythonu, máš na půl vyhráno. Pokud s tím potřebuješ pomoci, tak nejlépe postupuj 
 podle materiálů [instalace Pythonu a venv vytvořených pro PyLadies.](http://pyladies.cz/v1/s001-install/instalace.html)
 
+## Co bys měl/a před kurzem vědět, aby vše dobře probíhalo
+
 Než budeš instalovat dál, předpokladem je, že máš:
 
  - nainstalovanou poslední stabilní verzi Python 3 (v době psaní tohoto textu to byla 3.5.2)
@@ -28,6 +30,7 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - zmáknutý pohyb v Terminálu cd, ls nebo dir, nano, mkdir, rm, ovladat šipku nahoru a TAB (pokud máš nastavené autodoplňování na TAB)
  - základní znalost konceptů programování v Pythonu - for cyklus, if, def
  - umíš na svém počítači udělat screenshot obrazovky i s výřezem (budeme při kurzu uplatňovat) a víš, kde poté soubory jsou
+ - máš nějaké hrubé základy HTML/CSS
 
 ***
 
