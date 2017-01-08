@@ -22,7 +22,7 @@ Než budeš instalovat dál, předpokladem je, že máš:
  - nainstalovanou poslední stabilní verzi Python 3 (v době psaní tohoto textu to byla 3.5.2)
  - vytvořené virtuální prostředí
  - spuštěné virtuální prostředí - příkaz ```source venv/bin/activate```
- - nainstalovaný prohlížeč [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+ - nainstalovaný prohlížeč [Chrome verze 54 nebo vyšší](https://www.google.com/chrome/browser/desktop/index.html)
  - účet na [GitHubu](https://github.com/)
  - máš v počítači nainstalovaný [Git](http://pyladies.cz/v1/s001-install/git.html) a [Editor](http://pyladies.cz/v1/s002-hello-world/editor.html)
  - zmáknutý pohyb v Terminálu cd, ls nebo dir, nano, mkdir, rm, ovladat šipku nahoru a TAB (pokud máš nastavené autodoplňování na TAB)
@@ -47,33 +47,33 @@ najdeš příkaz, kterým jej nainstaluješ v příkazové řádce.
 
 ## Instalace ovladače
 
-Teď si nainstalujeme ovladač (driver) pro Chrome - Google Chrome Driver
+Teď si nainstalujeme ovladač (driver) pro Chrome - Google Chrome Driver.
 
-#### Chrome
+Balík s ovladačem chromedriver stáhneme z [webu](https://sites.google.com/a/chromium.org/chromedriver/downloads/) pomocí příkazu `wget`
 
-Balík s ovladačem chromedriver stáhneme ze [webu](https://sites.google.com/a/chromium.org/chromedriver/downloads/) pomocí příkazu `wget`
-
-pro Linux 32bit:
+* pro Linux 32bit:
 ```
 wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux32.zip
 ```
-pro Linux 64bit:
+* pro Linux 64bit:
 ```
 wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
 ```
 
 Rozbalíme ho pomocí `unzip`
 
-pro Linux 32bit:
+* pro Linux 32bit:
 ```
 unzip chromedriver_linux32.zip
 ```
-pro Linux 64bit:
+* pro Linux 64bit:
 ```
 unzip chromedriver_linux64.zip
 ```
 
-Přesuneme ho do `/usr/local/bin/`, aby byl v proměnné prostředí `$PATH`: 
+## Nastavení cesty (PATH) k ovladači
+
+Aby byl ovladač spustitelný z prográmků, které budeme tvořit, je třeba ho přidat do proměnné prostředí `$PATH`. Nainstalovaný ovladač chromedriver proto přesuneme do `/usr/local/bin/`: 
 ```
 sudo mv chromedriver /usr/local/bin/
 ```
@@ -83,12 +83,9 @@ Ověříme, že je na správném místě a že je spustitelný:
 which chromedriver
 ```
 
-Hotovo. :-)
-
-## Nastavení cesty (PATH) k ovladači
+## Spuštění zkušebního testu
 
 Uděláme si test, který nám pomůže ověřit, že máme vše připravené k testování na Chrome.
-Hotový soubor `test_installation.py` s testem najdeš v repozitáři TestLadies na GitHubu, [ze složky instalace.](https://github.com/PyLadiesCZ/TestLadies/tree/master/instalace) 
 
 Naklonuj si repozitář TestLadies k sobě do počítače do složky TestLadies. Ano, ve složce TestLadies tedy po naklonování budeš mít další složku `TestLadies`. 
 Repozitář naklonuješ pomocí příkazu:
@@ -97,11 +94,9 @@ Repozitář naklonuješ pomocí příkazu:
 git clone https://github.com/PyLadiesCZ/TestLadies
 ```
 
-Nastavení ovladačů pro Linux je velmi jednoduché díky přesunu driveru do `/usr/local/bin/`, který jsme provedli už při instalaci. 
-Řeší to poté řádek `browser = webdriver.Chrome('chrome')` v souboru `test_installation.py`.
+Ve složce `instalace` najdeš hotový soubor `test_installation.py`. Nastavení ovladače v tomto souboru řeší řádek `browser = webdriver.Chrome('chromedriver')`.
 
-***Ověř si, zda je vše nastaveno správně:***
-V příkazové řádce spusť soubor z nově naklonované složky `TestLadies` pomocí `python test_installation.py` (ano, v zapnutém virtuálním prostředí). 
+Spusť soubor pomocí `python test_installation.py` (ano, v zapnutém virtuálním prostředí). 
 Pokud je vše v pořádku, spustí se prohlížeč, provede se test, prohlížeč se opět vypne a v příkazové řádce se vypíše výsledek testu.
 Pokud máš vše nainstalováno správně, v Terminálu se vypíše `Test OK`, pokud je něco špatně, test spadne 
 (v tu chvili je něco špatně s instalacemi a je nutné to vyřešit před kurzem), případně vypíše `Sorry, it didn't work`.
