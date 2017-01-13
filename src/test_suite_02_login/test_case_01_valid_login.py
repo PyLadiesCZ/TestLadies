@@ -18,6 +18,7 @@ def test_case_01_valid_login(selenium, base_url, variables):
     step_04_fill_password(selenium, variables['password'])
     step_05_click_submit(selenium)
 
+    verify_user_logged_in(selenium)
 
 def step_01_open_tested_page(selenium, base_url):
     selenium.get(base_url)
@@ -61,6 +62,7 @@ def step_05_click_submit(selenium):
     el = selenium.find_element_by_name('login_submit')
     el.click()
 
+def verify_user_logged_in(selenium):
     # kdyz potrebujeme otestovat, ze na strance je nejaky konkretni element
     # el = selenium.find_element_by_xpath('//*[@id="messages"]/div/div')
     # vynechame nefunkcni identifikatory pro pripad, ze se zmeni HTML sablona
