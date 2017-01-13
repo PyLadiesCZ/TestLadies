@@ -62,7 +62,9 @@ def step_05_click_submit(selenium):
     el.click()
 
     # kdyz potrebujeme otestovat, ze na strance je nejaky konkretni element
-    el = selenium.find_element_by_xpath('//*[@id="messages"]/div/div')
+    # el = selenium.find_element_by_xpath('//*[@id="messages"]/div/div')
+    # vynechame nefunkcni identifikatory pro pripad, ze se zmeni HTML sablona
+    el = selenium.find_element_by_id('messages')
 
     # kdyz potrebujeme zjistit, ze element obsahuje konkretni text
     assert 'Welcome back' in el.text
