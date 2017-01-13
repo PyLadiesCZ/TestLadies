@@ -3,7 +3,7 @@ Zdrojové kódy automatizovaných testů
 instalace
 ---------
 
-Nejdříve je trěba mít nainstalované selenium ve virtual envu a ten musí být zapnutý, viz [../instalace]
+Nejdříve je trěba mít nainstalované selenium ve virtual envu a ten musí být zapnutý, viz kapitola [instalace](../instalace)
 
 `pip install`
 
@@ -20,6 +20,17 @@ Vytvoř soubor s proměnnýma `variables.json`
 spuštění
 --------
 
-`pytest --driver Chrome -v --variables variables.json`
+Rozmanitá konfigurace se po spuštění načte z [pytest.ini](pytest.ini), to nám ušetří vypisování parametrů do terminálu.
 
-`pytest --driver Chrome -v --variables variables.json --html=report/index.html`
+Vlastní spuštění testů se dělá v adresáři `src` se zapnutým `venv` pomocí příkazu
+
+`(venv) src $ pytest`
+
+V konzoli vidíme, jak to dopadlo. Pokud nás zajímají detaily (včetně screenshotů), tak ty najdeme ve vygenerovaném HTML reportu v `src/report/index.html`.
+
+
+Ten si můžeme otevřít v tzv. "lokálně". V okně prohlížeče `Soubor > Otevřít` nebo `Ctrl`+`O` a pak najít soubor, nebo elegantně z terminálu příkazem.
+
+`(venv) src $ google-chrome /report &`
+
+

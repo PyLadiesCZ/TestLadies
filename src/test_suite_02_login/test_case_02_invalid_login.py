@@ -42,8 +42,11 @@ def step_05_click_submit(selenium):
     el = selenium.find_element_by_name('login_submit')
     el.click()
 
-    re = WebDriverWait(selenium, 2).until(
-        EC.text_to_be_present_in_element((By.TAG_NAME, 'strong'), 'Oops! We found some errors')
-    )
+    # kdyz potrebujeme otestovat, ze na strance je nejaky konkretni element
+    el = selenium.find_element_by_xpath('//*[@id="login_form"]/div[1]/strong')
+
+    # kdyz potrebujeme zjistit, ze element obsahuje konkretni text
+    assert 'Oops!' in el.text
+
 
 

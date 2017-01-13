@@ -30,6 +30,8 @@ Ticket tool - github
 
 Inspektor prohlížeče - skladba Webu DOM, XPath
 
+https://developers.google.com/web/tools/chrome-devtools/
+
 ---------------------
 
 Nástroj na capture videa
