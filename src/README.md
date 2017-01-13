@@ -12,7 +12,9 @@ Vytvoř soubor s proměnnýma `variables.json`
 ```
 {
   "username": "xxx",
-  "password": "yyy"
+  "password": "yyy",
+  "invalid_username": "asdf@asdf.cz",
+  "invalid_password": "asdf"
 }
 ```
 

@@ -11,11 +11,11 @@ def selenium(selenium):
     return selenium
 
 
-def test_case_02_invalid_login(selenium, base_url):
+def test_case_02_invalid_login(selenium, base_url, variables):
     step_01_open_tested_page(selenium, base_url)
     step_02_click_on_login(selenium)
-    step_03_fill_username(selenium)
-    step_04_fill_password(selenium)
+    step_03_fill_username(selenium, variables['invalid_username'])
+    step_04_fill_password(selenium, variables['invalid_password'])
     step_05_click_submit(selenium)
 
 
@@ -26,17 +26,13 @@ def step_02_click_on_login(selenium):
     el = selenium.find_element_by_link_text('Login or register')
     el.click()
 
-    re = WebDriverWait(selenium, 2).until(
-        EC.text_to_be_present_in_element((By.TAG_NAME, 'h2'), 'Log In')
-    )
-
-def step_03_fill_username(selenium):
+def step_03_fill_username(selenium, username):
     el = selenium.find_element_by_id('id_login-username')
-    el.send_keys('asdf@asfd.cz')
+    el.send_keys(username)
 
-def step_04_fill_password(selenium):
+def step_04_fill_password(selenium, password):
     el = selenium.find_element_by_id('id_login-password')
-    el.send_keys('asdf')
+    el.send_keys(password)
 
 def step_05_click_submit(selenium):
     el = selenium.find_element_by_name('login_submit')
