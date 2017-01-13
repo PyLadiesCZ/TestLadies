@@ -3,3 +3,7 @@ venv
 chromedriver.exe
 chromedriver
 *.log
+__pycache__
+.cache
+src/variables.json
+src/report
