@@ -164,7 +164,7 @@ K zamyšlení:
 
 - Kde máš hostovaný mail a proč?
 
-- Pohyb v terminálu - cd, ls / dir, spuštění příkazu
+- Pohyb v terminálu - cd, ls / dir, spuštění příkazu ([GOW](https://github.com/bmatzelle/gow), [git bash](https://git-scm.com/download/win))
 
 - Základní znalost konceptů programování - for cyklus, if
 

@@ -1,9 +1,10 @@
 from selenium import webdriver
 
-# setup
+# setup browser
 browser = webdriver.Chrome('chromedriver')
+
+# open page
 browser.get('https://testshop.pyladies.cz/vasek')
 
-
 # teardown
-# browser.quit()
+browser.quit()

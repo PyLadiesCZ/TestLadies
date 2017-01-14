@@ -61,7 +61,7 @@ testování použitelnosti - to je sranda, ale netýká se nás to - https://en.
 
 zdroje https://lynnewatanabe.wordpress.com/2011/08/24/could-usability-testing-of-websites-help-non-profits-heck-yeah/ https://medium.com/@nickvanderlinde/how-we-do-user-testing-at-mirabeau-223996ad841f
 
-Software lifecycle (životní cylkus)
+Software lifecycle (životní cyklus)
 -----------------------------------
 
 interaktivní hra - seřadit fáze životního cyklu
