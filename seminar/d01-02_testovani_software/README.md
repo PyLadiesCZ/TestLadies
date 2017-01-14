@@ -126,21 +126,6 @@ Bušit, jako hluší do vrat - tzv. black box testing
 Praktická ukázka, např. PSČ (najít, screenshot, založit ticket)
 
 
-Co je pod pokličkou
--------------------
-
-- Kde je to co testujeme - dev, qa, prod
-
-- oddělená data
-  - Aplikace | Databáze
-  - https://www.google.com/search?q=web+application+schema&source=lnms&tbm=isch&sa=X#tbm=isch&q=web+application+tiers https://www.safaribooksonline.com/library/view/internet-world/9780132990455/ch17lev1sec3.html
-
-![10](10.png)
-
-- Co s tím budeme dělat
-  - Kopie projektu s testovací databází
-
-
 Co je to ten bug?
 -----------------
 
@@ -182,4 +167,22 @@ Teorie k životu issue
 ![12](12.png)
 
 zdroj https://youtu.be/NpDZ2NJmDrE?list=PLDC2A0C8D2EC934C7
+
+
+
+Co je pod pokličkou projektu
+----------------------------
+
+- Víš jak přibližně funguje web? Jaký je rozdíl mezi hostingem a DNS jménem?
+
+- Kde je to co testujeme - dev, qa, prod
+
+- oddělená data
+  - Aplikace | Databáze
+  - https://www.google.com/search?q=web+application+schema&source=lnms&tbm=isch&sa=X#tbm=isch&q=web+application+tiers https://www.safaribooksonline.com/library/view/internet-world/9780132990455/ch17lev1sec3.html
+
+![10](10.png)
+
+- Co s tím budeme dělat
+  - Kopie projektu s testovací databází
 
