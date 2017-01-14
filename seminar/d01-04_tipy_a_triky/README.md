@@ -1,7 +1,7 @@
 Tipy a triky - MacOS
 --------------------
 
-_by @lsdp_
+_by @lsdpv_
 
 # Alias
 ## Ukázka pro Linuxáře a Mackaře
