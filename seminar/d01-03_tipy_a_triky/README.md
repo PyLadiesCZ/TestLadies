@@ -1,6 +1,10 @@
 _Představení a instalace nástrojů první den_
 _50 min, live ukázky a podklady na webu + vytištěné - win / linux / mac ; Checklist pro kontrolu instalace_
 
+
+debatní začátek odpoledního programu - tipy a triky - live + handout [Magda, Verča, Vašek]
+
+
 ---------------------
 
 

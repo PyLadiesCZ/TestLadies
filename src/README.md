@@ -1,6 +1,6 @@
 Zdrojové kódy automatizovaných testů
 
-instalace
+Instalace
 ---------
 
 Nejdříve je trěba mít nainstalované selenium ve virtual envu a ten musí být zapnutý, viz kapitola [instalace](../instalace)
@@ -14,12 +14,14 @@ Vytvoř soubor s proměnnýma `variables.json`
   "username": "xxx",
   "password": "yyy",
   "invalid_username": "asdf@asdf.cz",
-  "invalid_password": "asdf"
+  "invalid_password": "asdf",
+  "category": "Clothing",
+  "product_name": "Django T-shirt"
 }
 ```
 
 
-spuštění
+Spuštění
 --------
 
 Rozmanitá konfigurace se po spuštění načte z [pytest.ini](pytest.ini), to nám ušetří vypisování parametrů do terminálu.
@@ -33,6 +35,6 @@ V konzoli vidíme, jak to dopadlo. Pokud nás zajímají detaily (včetně scree
 
 Ten si můžeme otevřít v tzv. "lokálně". V okně prohlížeče `Soubor > Otevřít` nebo `Ctrl`+`O` a pak najít soubor, nebo elegantně z terminálu příkazem.
 
-`(venv) src $ google-chrome /report &`
+`(venv) src $ google-chrome report &`
 
 
