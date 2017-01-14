@@ -38,6 +38,10 @@ Testování software je mnoho různých typů.
 - Desktopové systémy - úzkoprofilové - korporátní starší systémy
 - Embedded systémy - formální - např. vyhýbky na železnici
 
+![logical_organization_of_testing](http://images.slideplayer.com/5/1493816/slides/slide_5.jpg)
+
+zdroj http://slideplayer.com/slide/1493816/
+
 ![02](02.png)
 
 zdroj https://youtu.be/n2A9OakDYcY?list=PLDC2A0C8D2EC934C7
