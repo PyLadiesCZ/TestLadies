@@ -21,6 +21,12 @@ O čem je a o čem není tento kurz https://youtu.be/n2A9OakDYcY?list=PLDC2A0C8D
 
 ![01](01.png)
 
+Co je to ten bug?
+-----------------
+
+https://en.wikipedia.org/wiki/Software_bug
+
+![bug](https://upload.wikimedia.org/wikipedia/commons/8/8a/H96566k.jpg)
 
 O čem je a o čem není tento kurz
 --------------------------------
@@ -97,3 +103,38 @@ Co je pod pokličkou
 
 
 
+
+
+
+Teorie k reportování chyb
+-------------------------
+
+https://youtu.be/EKv85-K_6w4?list=PLDC2A0C8D2EC934C7
+
+ruzne ukazky ticketovacich toolu
+
+- jira
+- github
+- bitbucket
+- trac
+- redmine
+
+![11](11.png)
+
+---------------------
+
+Ticket tool - github
+
+
+
+Teorie k životu issue
+---------------------
+
+https://youtu.be/NpDZ2NJmDrE?list=PLDC2A0C8D2EC934C7
+
+![12](12.png)
+
+
+
+Ukázka použití jednotlivých nástrojů (odhalení chyby a její nareportování)
+===========================================================================

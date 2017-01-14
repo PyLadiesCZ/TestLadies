@@ -19,7 +19,7 @@ Vítejte
 
 <details>
 <summary>_ORGANIZAČNÍ POZNÁMKA_</summary>
-připojení počítačů, seznámení, icebreaker
+připojení počítačů, tištěné materiály, seznámení, icebreaker<br>90 min.
 </details>
 
 ************
@@ -36,8 +36,8 @@ Kurz je koncipovaný, jako otevřený s ohledem na rovné příležitosti na trh
 **Sobota**
 
  - Úvod do testování.
- - Hackujeme vlastní počítač.
  - Co je to _bug_ a jak se reportuje?
+ - Hackujeme vlastní počítač.
  - Manuální testy - Jak se navrhují a jak se dokumentují?
  - Představení aplikace Oscar.
 
@@ -66,35 +66,35 @@ Pěkně vystihla charakter kurzu jedna z organizátorek.
 
 <details>
 <summary>_ORGANIZAČNÍ POZNÁMKA_</summary>
-očekávání účastníků, vize
+vize organizátorů, představení očekávání účastníků
 </details>
 
 
 ************
 
 
-Dnešní program
---------------
+Program prvního dne
+-------------------
 
-- 9:00 zahájení, docházka, skill check
+- 09:00 - zahájení, docházka, skill check
 
-- 10:30 co je to testování software
+- 10:30 - co je to testování software
 
-- __12:00 oběd__
+- __12:00 - oběd__
 
-- 13:00 tipy a triky na vlastním počítači
+- 13:00 - seznámení se s testovanou aplikací Oscar
 
-- 13:45 seznámení se s testovanou aplikací Oscar
+- 13:30 - tipy a triky na vlastním počítači - inspector v prohlížeči
 
-- 14:10 manuální testování nástroje - inspector v prohlížeči
+- 14:15 - manuální testování - čtení scénářů
 
-- __14:30 odpolední káva__
+- __14:30 - odpolední káva__
 
-- 14:50 manuální testování na příkladech - systematicky
+- 15:00 - manuální testování na příkladech
 
-- 15:30 od manuálního testování k automatizaci [Magda]
+- 15:30 - od manuálního testování k automatizaci
 
-- 16:00 diskuze a ukončení
+- 16:00 - diskuze a ukončení
 
 
 <br>
