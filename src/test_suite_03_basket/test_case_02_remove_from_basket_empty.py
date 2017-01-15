@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 
 from test_suite_03_basket.test_case_01_add_item_to_basket import test_case_01_add_item_to_basket as case_3_1
+from test_suite_04_order.test_case_01_order_cash import step_06_go_to_basket as step_4_1_06
 
 import pytest
 @pytest.fixture
@@ -21,9 +22,9 @@ def test_case_02_remove_item_from_basket_empty(selenium, base_url, variables):
     step_03_check_basket_is_empty(selenium)
 
 def step_02_remove_item_from_basket(selenium):
-    go_to_basket = selenium.find_element(By.XPATH,'//a[@class="btn btn-default" and contains(text(),"View basket")]')
-    go_to_basket.click()
-    remove_button = selenium.find_element(By.XPATH,'//a[contains(text(),"Remove")]')
+    step_4_1_06(selenium)
+
+    remove_button = selenium.find_element(By.XPATH, '//a[contains(text(),"Remove")]')
     remove_button.click()
 
 def step_03_check_basket_is_empty(selenium):
