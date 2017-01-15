@@ -17,6 +17,12 @@ Vytvoř soubor s proměnnýma `variables.json`
   "invalid_password": "asdf",
   "category": "Clothing",
   "product_name": "Django T-shirt"
+  "first_name": "aaa",
+  "last_name": "bbb",
+  "address_line1": "ccc",
+  "city": "ddd",
+  "zip_code": 11111,
+  "country": "CZ"
 }
 ```
 
