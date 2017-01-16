@@ -98,15 +98,29 @@ cs klávesnice - eng znaky pomocí Alt
 Inspektor prohlížeče
 --------------------
 
- - skladba Webu DOM, XPath
-
+ - v prohlížeči: pravé tlačítko > Prozkoumat (Inspect)
+ - nebo F12, Ctrl+Shift+I, Cmd+Opt+I
+ - záložka Elements:
+     - elementy i styly jsou editovatelný
+     - pravé tlačítko > Copy > Copy XPath
+ - záložka Console:
+     - spouští JavaScript kód (podobně jako Python console v terminálu)
+     - `$$('css selektor')`, napr: `$$('*[data-robot-resultstotal]')`
+     - `$x('xpath')`, napr: `$x('//*[@data-robot-resultstotal]')`
+ - záložka Network:
+     - Disable Cache checkbox
+ 
 https://developers.google.com/web/tools/chrome-devtools/
 
 
 XPath
 -----
 
-...
+Příklady:
+ - $x('`//*[@class="submit_button"]/../div[1]`')
+ - driver.find_element_by_xpath('`//*[contains(text(), "aaa")]`')
+ 
+Víc na https://msdn.microsoft.com/en-us/library/ms256086(v=vs.110).aspx
 
 
 Nástroj na capture videa
